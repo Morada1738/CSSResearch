@@ -36,36 +36,48 @@
 		html {
 			font: 90%/1.3 arial,sans-serif;
 			padding:1em;
-			background:#4d4d00;
+			background: #8eb2ae;
 			margin:0; 
 			padding:0;
+
+
 		}
+
 			
 		form {
-			background:#b3b300;
+			background: #bfc0bf;
 			padding:1em;
-			border:5px solid #ff66d9;
+			border:5px solid #d1d0af;
 			margin:1em;
 			width:42em;
 		}
-		
-		/*Group A-B; fieldset
-			1. Research what the various values for the 
-				padding property (i.e. 0, 0.5em, etc.) give us.
-				How might changing them affect are page?
-			2. What is the difference between "padding" and "margin"?
-			3. What is the difference between the units of measurement 
-				"px" and "em"?  What other ways are there are measuring
-				in a web page?  (You might want to check out 
-				http://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/)
-			4. Find some other property-value pairs we could add
-				to the fieldset and how those would affect the page.
-				Be creative!
-			5. Be prepared to share your findings with the class by 
-				showing the effects of changing these.
-		*/
+
+
+        body {
+            background-image: url("https://pbs.twimg.com/media/CSgE0mrUsAAA1iv.jpg");
+            background-color: #cccccc;
+        }
+
+
+
+
+        /*Group A-B; fieldset
+            1. Research what the various values for the
+                padding property (i.e. 0, 0.5em, etc.) give us.
+                How might changing them affect are page?
+            2. What is the difference between "padding" and "margin"?
+            3. What is the difference between the units of measurement
+                "px" and "em"?  What other ways are there are measuring
+                in a web page?  (You might want to check out
+                http://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/)
+            4. Find some other property-value pairs we could add
+                to the fieldset and how those would affect the page.
+                Be creative!
+            5. Be prepared to share your findings with the class by
+                showing the effects of changing these.
+        */
 		fieldset{
-			border:3px solid #ff66d9;
+			border:3px solid #8dada5;
 			padding:0 0.5em 0.5em;
 			margin-left: 2px;
 			margin-right: 2px;
@@ -132,11 +144,11 @@
 			4. Be prepared to share your findings with the class.
 		*/
 		input:hover, input:focus {
-			border-color:#c5c5c5;
+			border-color: #06acc5;
 			background:#f6f6f6;
 		}
 		input.readonly {
-			border-color:#ff66d9;
+			border-color: #d6029c;
 			background:#fafafa;
 		}
 		/*END Group E*/
@@ -186,17 +198,22 @@
 				if anything.
 			5. Be prepared to share your findings with the class.
 		*/
-		h2	{
-			background:#ff66d9;
+        h2:after, h2:before {
+            content:"\A";
+            width:10px;
+            height:10px;
+            border-radius:50%;
+            background: #b8028a;
+            display:inline-block; /* Put values in the h2.after and h2.before, and the result is dots in the subheader.*/
 		}
 		h3	{
-			background:#b3b300;
+			background: #b3ae00;
 		}
 
 		img.shape {			
 			float:right;
-			width:100px;
-			height:100px;
+			width:150px;
+			height:150px;
 		}
 				
 		/*END Group G*/
@@ -212,7 +229,7 @@
 		  >
 		  <fieldset>
             <h3>Spheres:</h3>
-			<img src="img/PurpleSphere.jpg" class="shape">
+			<img src="http://media.npr.org/assets/img/2016/03/29/ap_090911089838_sq-3271237f28995f6530d9634ff27228cae88e3440-s900-c85.jpg" class="shape">
             <table>
                 <tr>
                     <td><label for="sphereRadius">Radius:</label></td>
@@ -264,7 +281,7 @@
         <!--This is for cones:-->
         <fieldset>
             <h3>Cones:</h3>
-            <img src="img/PurpleCone.jpg" class="shape">
+            <img src="https://www.joycone.com/sites/default/files/products/thumbs/Products_400x340_Waffle-Cones.png" class="shape">
             <table>
                 <tr>
                     <td><label for="coneRadius">Radius:</label></td>
@@ -332,7 +349,7 @@
         <!--This is for cylinders:-->
         <fieldset>
             <h3>Cylinders:</h3>
-            <img src="img/PurpleCylinder.gif" class="shape">
+            <img src="http://www.mathatube.com/images/can-00.jpg" class="shape">
             <table>
                 <tr>
                     <td><label for="cylRadius">Radius:</label></td>
